@@ -797,7 +797,7 @@ class PageManager with ChangeNotifier {
         await _audioQuery.removeFromPlaylist(listId, item);
       }
     } catch (e) {
-      print("@@ ${e.toString()}");
+      return;
     }
     fetchPlaylists();
     notifyListeners();
@@ -814,7 +814,6 @@ class PageManager with ChangeNotifier {
 
   renamePlaylist(listId, newName) async {
     await _audioQuery.renamePlaylist(listId, newName);
-    print("@@@@@@@@@@@@@@@@@@ rename");
     // final thepla = File(playlists[playlistsIds.indexOf(listId)].data);
     // var path = thepla.path;
     // var lastSeparator = path.lastIndexOf(Platform.pathSeparator);
