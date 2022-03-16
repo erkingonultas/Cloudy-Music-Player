@@ -19,3 +19,5 @@ Note: Cloudy Music Player is a free local music player application. It does not 
 - Allows the player to write, modify, delete to SD card.
 - Allows the player to read data from SD card.
 
+## Screenshots
+will be added soon.
